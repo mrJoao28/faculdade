@@ -42,7 +42,20 @@ def pegar_cpf():
         
     return cpf
         
+def pegar_email():
+    while True:
+        try:
+            email = str(input("Digite seu email: "))
+            if "@" not in email :
+                raise ValueError
+            
+            break
+        except ValueError:
+            print("Digite o email corretamente")
+            continue
+    return email
 
 name = str(input("Insira seu nome: "))
+email = pegar_email()
 cpf = pegar_cpf()
 senha = pegar_senha()
