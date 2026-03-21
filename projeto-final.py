@@ -4,6 +4,7 @@ cadastro bancario
 import math
 
 
+
 def pegar_senha():
     while True:
         try :
@@ -54,6 +55,12 @@ def pegar_email():
             print("Digite o email corretamente")
             continue
     return email
+
+
+print("*"*24)
+print("*"+" "*3+"SISTEMA BANCÁRIO"+" "*3+"*")
+print("*"*24)
+
 
 name = str(input("Insira seu nome: "))
 email = pegar_email()
