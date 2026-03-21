@@ -63,6 +63,10 @@ print("*"*24)
 
 
 name = str(input("Insira seu nome: "))
+print("*"*24)
 email = pegar_email()
+print("*"*24)
 cpf = pegar_cpf()
+print("*"*24)
 senha = pegar_senha()
+print("*"*24)
