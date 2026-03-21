@@ -27,8 +27,9 @@ def pegar_cpf():
                 raise TypeError
             nums =  cpf.split("-")
             for num in nums:
-                if num.isalpha() == True or num is None:
-                    raise ValueError
+                for n in num:
+                    if n.isalnum != False or n is None:
+                        raise ValueError
             break
 
         except TypeError:
