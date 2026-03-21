@@ -19,8 +19,29 @@ def pegar_senha():
             print("Insira uma senha valida")
     return senha
 
+def pegar_cpf():
+    while True:
+        try:
+            cpf = str(input("Insira seu cpf em formato xxx-xxx-xxx-xx: "))
+            if len(cpf) != 14:
+                raise TypeError
+            nums =  cpf.split("-")
+            for num in nums:
+                if num.isalpha() == True or num is None:
+                    raise ValueError
+            break
 
+        except TypeError:
+            print("Insira seu cpf completo")
+            continue
+
+        except ValueError:
+            print("Seu cpf pode ter apenas numeros")
+            continue
+        
+    return cpf
+        
 
 name = str(input("Insira seu nome: "))
-cpf = str(input("Insira seu pdf em formato xxx-xxx-xxx-xx: "))
+cpf = pegar_cpf()
 senha = pegar_senha()
