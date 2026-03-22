@@ -18,9 +18,8 @@ class Conta :
 
 
     def transfeir (self , valor , conta):
-        self.valor = valor
-        self.conta = conta
         Conta.contas[conta].dinheiro += valor
+        self.dinheiro -= valor
     
 
 def pegar_senha():
