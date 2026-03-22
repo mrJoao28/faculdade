@@ -11,12 +11,16 @@ class Conta :
         self.email = email
         self.cpf = cpf
         self.senha = senha
-        self.id = conta_id 
+        self.id = conta_id
+        self.dinheiro = 100
         conta_id +=1
         contas.append(self.nome)
 
 
     def transfeir (self , valor , conta):
+        self.valor = valor
+        self.conta = conta
+        Conta.contas[conta].dinheiro += valor
     
 
 def pegar_senha():
