@@ -4,17 +4,19 @@ cadastro bancario
 import random
 
 class Conta :
-    counter = 0
+    contas = list()
+    conta_id = 0
     def __init__(self,nome,email,cpf,senha):
-        counter += 1
         self.nome = nome
         self.email = email
         self.cpf = cpf
         self.senha = senha
-        self.id = counter
+        self.id = conta_id 
+        conta_id +=1
+        contas.append(self.nome)
 
 
-    def transfeir
+    def transfeir (self , valor , conta):
     
 
 def pegar_senha():
