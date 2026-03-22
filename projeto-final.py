@@ -1,17 +1,20 @@
 """
 cadastro bancario
 """
-import math
+import random
 
 class Conta :
-
+    counter = 0
     def __init__(self,nome,email,cpf,senha):
+        counter += 1
         self.nome = nome
         self.email = email
         self.cpf = cpf
         self.senha = senha
+        self.id = counter
 
-    
+
+    def transfeir
     
 
 def pegar_senha():
