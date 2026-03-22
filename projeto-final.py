@@ -87,3 +87,5 @@ cpf = pegar_cpf()
 print("*"*24)
 senha = pegar_senha()
 print("*"*24)
+
+conta = Conta(name,email,cpf,senha)
