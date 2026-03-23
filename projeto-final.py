@@ -1,7 +1,6 @@
 """
 cadastro bancario
 """
-import random
 
 class Conta :
     contas = list()
@@ -45,8 +44,10 @@ def pegar_cpf():
                 raise TypeError
             nums =  cpf.split("-")
             for num in nums:
+                print(num)
                 for n in num:
-                    if n.isalnum != False or n is None:
+                    print(n)
+                    if n.isnumeric != False or n is None:
                         raise ValueError
             break
 
