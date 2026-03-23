@@ -44,10 +44,8 @@ def pegar_cpf():
                 raise TypeError
             nums =  cpf.split("-")
             for num in nums:
-                print(num)
                 for n in num:
-                    print(n)
-                    if n.isnumeric != False or n is None:
+                    if n.isnumeric == False or n is None:
                         raise ValueError
             break
 
