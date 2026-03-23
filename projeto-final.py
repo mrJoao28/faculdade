@@ -39,7 +39,7 @@ def pegar_senha():
 def pegar_cpf():
     while True:
         try:
-            cpf = str(input("Insira seu cpf em formato xxx-xxx-xxx-xx: "))
+            cpf = str(input("Insira seu cpf em formato xxx-xxx-xxx-xx: ")).strip()
             if len(cpf) != 14:
                 raise TypeError
             nums =  cpf.split("-")
@@ -62,7 +62,7 @@ def pegar_cpf():
 def pegar_email():
     while True:
         try:
-            email = str(input("Digite seu email: "))
+            email = str(input("Digite seu email: ")).strip()
             if "@" not in email :
                 raise ValueError
             
