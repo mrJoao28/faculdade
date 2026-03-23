@@ -13,7 +13,7 @@ class Conta :
         self.id = Conta.conta_id
         self.dinheiro = 100
         Conta.conta_id +=1
-        contas.append(self.nome)
+        Conta.contas.append(self.nome)
 
 
     def transfeir (self , valor , conta):
