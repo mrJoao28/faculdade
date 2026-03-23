@@ -10,9 +10,9 @@ class Conta :
         self.email = email
         self.cpf = cpf
         self.senha = senha
-        self.id = conta_id
+        self.id = Conta.conta_id
         self.dinheiro = 100
-        conta_id +=1
+        Conta.conta_id +=1
         contas.append(self.nome)
 
 
