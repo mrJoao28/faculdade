@@ -20,7 +20,6 @@ class Conta :
         Conta.contas[conta].dinheiro += valor
         self.dinheiro -= valor
 
-    
 
 def pegar_senha():
     while True:
@@ -83,7 +82,6 @@ def criar_conta():
     senha = pegar_senha()
     print("*"*24)
     conta = Conta(name,email,cpf,senha)
-
 
 def deletar_conta(conta_id):
     Conta.contas.pop(conta_id)
