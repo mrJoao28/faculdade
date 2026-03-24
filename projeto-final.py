@@ -72,22 +72,28 @@ def pegar_email():
             continue
     return email
 
+def criar_conta():
+    name = str(input("Insira seu nome: "))
+    print("*"*24)
+    email = pegar_email()
+    print("*"*24)
+    cpf = pegar_cpf()
+    print("*"*24)
+    senha = pegar_senha()
+    print("*"*24)
+    conta = Conta(name,email,cpf,senha)
+
+
 
 print("*"*24)
 print("*"+" "*3+"SISTEMA BANCÁRIO"+" "*3+"*")
 print("*"*24)
 
 
-name = str(input("Insira seu nome: "))
-print("*"*24)
-email = pegar_email()
-print("*"*24)
-cpf = pegar_cpf()
-print("*"*24)
-senha = pegar_senha()
-print("*"*24)
 
-conta = Conta(name,email,cpf,senha)
+
+
+
 print(conta.id)
 print(conta.cpf)
 print(conta.email)
