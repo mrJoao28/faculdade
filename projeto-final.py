@@ -19,6 +19,7 @@ class Conta :
     def transfeir (self , valor , conta):
         Conta.contas[conta].dinheiro += valor
         self.dinheiro -= valor
+
     
 
 def pegar_senha():
@@ -84,6 +85,9 @@ def criar_conta():
     conta = Conta(name,email,cpf,senha)
 
 
+def deletar_conta(conta_id):
+    Conta.contas.pop(conta_id)
+    return "conta deletadaa"
 
 print("*"*24)
 print("*"+" "*3+"SISTEMA BANCÁRIO"+" "*3+"*")
