@@ -13,7 +13,7 @@ class Conta :
         self.id = Conta.conta_id
         self.dinheiro = 100
         Conta.conta_id +=1
-        Conta.contas.append(self.nome)
+        Conta.contas.append(self)
 
 
     def transfeir (self , valor , conta):
@@ -94,32 +94,3 @@ print("*"+" "*3+"SISTEMA BANCÁRIO"+" "*3+"*")
 print("*"*24)
 
 
-
-
-
-
-print(conta.id)
-print(conta.cpf)
-print(conta.email)
-print(conta.nome)
-print(conta.senha)
-print(conta.dinheiro)
-
-
-
-name = str(input("Insira seu nome: "))
-print("*"*24)
-email = pegar_email()
-print("*"*24)
-cpf = pegar_cpf()
-print("*"*24)
-senha = pegar_senha()
-print("*"*24)
-
-conta = Conta(name,email,cpf,senha)
-print(conta.id)
-print(conta.cpf)
-print(conta.email)
-print(conta.nome)
-print(conta.senha)
-print(conta.dinheiro)
