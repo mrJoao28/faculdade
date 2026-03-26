@@ -17,8 +17,11 @@ class Conta :
 
 
     def transfeir (self , valor , conta):
-        Conta.contas[conta].dinheiro += valor
-        self.dinheiro -= valor
+        if self.dinheiro >= valor :
+            Conta.contas[conta].dinheiro += valor
+            self.dinheiro -= valor
+        else :
+            print("Saldo insuficiente")
 
 
 def pegar_senha():
