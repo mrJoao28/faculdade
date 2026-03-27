@@ -92,9 +92,27 @@ def criar_conta():
     conta = Conta(name,email,cpf,senha)
     return conta
 
-def deletar_conta(conta_id):
-    Conta.contas.pop(conta_id)
-    return "conta deletadaa"
+def deletar_conta(conta_id ,senha):
+    conta_encontrada = Conta.contas[conta_id]
+    if conta_encontrada != None and senha == conta_encontrada.senha :
+        Conta.contas.pop(conta_id)
+        return "conta deletada"
+    else :
+        return "erro na deleçao de conta"
+
+def atualizar_dados(conta_id , senha , senha_atualizada , cpf_atualizado , nome_atualizado , email_atualizado ):
+    
+    if Conta.contas[conta_id] != None and senha == Conta.contas[conta_id].senha :
+        if senha_atualizada:
+            Conta.contas[conta_id].senha = senha_atualizada
+        if cpf_atualizado :
+            Conta.contas[conta_id].cpf = cpf_atualizado
+        if nome_atualizado:
+            Conta.contas[conta_id] = nome_atualizado
+        if email_atualizado:
+            Conta.contas[conta_id].email = email_atualizado
+
+
 
 print("*"*24)
 print("*"+" "*3+"SISTEMA BANCÁRIO"+" "*3+"*")
