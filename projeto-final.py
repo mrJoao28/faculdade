@@ -16,7 +16,7 @@ class Conta :
         Conta.contas.append(self)
 
 
-    def transferir (self , valor , conta):
+    def transfeir (self , valor , conta):
         if self.dinheiro >= valor :
             Conta.contas[conta].dinheiro += valor
             self.dinheiro -= valor
@@ -94,4 +94,3 @@ def deletar_conta(conta_id):
 print("*"*24)
 print("*"+" "*3+"SISTEMA BANCÁRIO"+" "*3+"*")
 print("*"*24)
-
