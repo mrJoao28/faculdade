@@ -24,6 +24,11 @@ class Conta :
             print("Saldo insuficiente")
 
 
+    def emprestimo (self , valor):
+        self.dinheiro += valor
+        return "emprestimo feito"
+
+
 def pegar_senha():
     while True:
         try :
