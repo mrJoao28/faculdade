@@ -38,3 +38,8 @@ def aniversario():
     meses = datetime.datetime.now().month - int(data[1]) + anos*12
     dias = datetime.datetime.now().day  - int(data[0]) + meses*30
     return "Voce tem {} anos , {} meses e {} dias de vida mn".format(anos,meses,dias)
+
+def prestacao():
+    valor = float(input("QUal é o valor da prestaçao em atraso? : "))
+    return "O valor atual de sua prestaçao atraseda é {} reais ".format((valor*1,1)*0.9)
+
