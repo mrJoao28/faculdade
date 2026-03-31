@@ -5,3 +5,9 @@ def media_ponderada(n1,n2,n3,n4,n5):
 def area_circulo(raio):
     return (raio**2) *3.14
 
+def inverter_numero(numero):
+    temp = numero[2]
+    numero[2] = numero[0]
+    numero[0] = temp
+    return numero
+
