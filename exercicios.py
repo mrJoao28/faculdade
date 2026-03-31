@@ -15,3 +15,8 @@ def calcurar_terreno():
     largura = float(input("Qual é a largura? : "))
     comprimento = float(input("QUal é o comprimeto? : "))
     return "O terreno tem a area de {} metros quadrados".format(largura*comprimento)
+
+def quantas_ferraduras():
+    cavalos  = int(input("QUantos cavalos tem? : "))
+    return "Serão necessarios {} ferraduras".format(cavalos*4)
+
