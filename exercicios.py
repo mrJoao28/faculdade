@@ -43,3 +43,7 @@ def prestacao():
     valor = float(input("QUal é o valor da prestaçao em atraso? : "))
     return "O valor atual de sua prestaçao atraseda é {} reais ".format((valor*1,1)*0.9)
 
+def receita():
+    paos = int(input("Quantidade de paos vendidos: "))
+    broas = int(input("QUantidade de brias vendidas: "))
+    return "O total vendido é {} e voce deve colocar na poupança {} reais".format(paos+broas,0.1*(paos*0.12 +broas*1.5))
