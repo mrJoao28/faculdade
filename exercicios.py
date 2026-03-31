@@ -1,3 +1,5 @@
+import datetime
+
 def media_ponderada(n1,n2,n3,n4,n5):
     media = (n1*1 + n2*2 + n3*3 + n4*4 + n5*5) /(15)
     return media
@@ -28,3 +30,11 @@ def carro():
     resto = (capacidade_maxima-litros_abastecidos)*performace
     return "O carro tem uma performace de {} km/l e poderia percorrer mais {} km".format(performace , resto)
 
+
+def aniversario():
+    data = input("INsira a sua data de aniversario no formato dia/mes/ano: ")
+    data = data.split("/")
+    anos = datetime.datetime.now().year - int(data[2])
+    meses = datetime.datetime.now().month - int(data[1]) + anos*12
+    dias = datetime.datetime.now().day  - int(data[0]) + meses*30
+    return "Voce tem {} anos , {} meses e {} dias de vida mn".format(anos,meses,dias)
