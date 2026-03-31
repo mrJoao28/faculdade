@@ -11,3 +11,7 @@ def inverter_numero(numero):
     numero[0] = temp
     return numero
 
+def calcurar_terreno():
+    largura = float(input("Qual é a largura? : "))
+    comprimento = float(input("QUal é o comprimeto? : "))
+    return "O terreno tem a area de {} metros quadrados".format(largura*comprimento)
