@@ -47,3 +47,5 @@ def receita():
     paos = int(input("Quantidade de paos vendidos: "))
     broas = int(input("QUantidade de brias vendidas: "))
     return "O total vendido é {} e voce deve colocar na poupança {} reais".format(paos+broas,0.1*(paos*0.12 +broas*1.5))
+
+
